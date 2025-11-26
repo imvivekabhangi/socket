@@ -48,18 +48,6 @@ export default function SocketDemo() {
   return (
     <div style={{ padding: 30 }}>
       <h1>Socket.io Debug Demo</h1>
-
-      <input
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Enter message"
-      />
-      <button onClick={sendMessage}>Send</button>
-
-      <h3>Received:</h3>
-      {received.map((msg, i) => (
-        <p key={i}>{msg}</p>
-      ))}
     </div>
   );
 }
